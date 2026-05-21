@@ -82,3 +82,31 @@ body {
 .animate-pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
 }
+
+/* Book and 3D effects */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.book-page {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Cinematic text shadow */
+.text-glow {
+  text-shadow: 0 0 40px rgba(196, 167, 125, 0.3);
+}
+
+/* Smooth page transitions */
+.page-transition {
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s ease;
+}
