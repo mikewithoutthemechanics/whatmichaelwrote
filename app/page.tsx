@@ -228,18 +228,14 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="grid md:grid-cols-3 gap-6">
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <a key={item} href="https://instagram.com/whatmichaelwrote" target="_blank" rel="noopener noreferrer" className="group relative aspect-square border border-[#1a1a1a] rounded-lg overflow-hidden hover:border-[#c4a77d] transition-all duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#c4a77d]/10 to-[#8b7355]/5" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-[#c4a77d] opacity-40 group-hover:opacity-100 transition-all duration-500 transform scale-75 group-hover:scale-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#050505] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <p className="text-[#c4a77d] text-sm">View on Instagram</p>
-                    </div>
-                  </a>
-                ))}
+              <div className="w-full max-w-4xl mx-auto border border-[#1a1a1a] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.instagram.com/whatmichaelwrote/embed"
+                  className="w-full h-[600px] md:h-[800px]"
+                  style={{ background: '#050505' }}
+                  scrolling="no"
+                  allowTransparency={true}
+                />
               </div>
             )}
 
